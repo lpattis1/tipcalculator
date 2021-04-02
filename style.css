@@ -1,0 +1,266 @@
+/* global styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+:focus {
+    outline-width: 0;
+}
+
+/* calculator */
+
+.calculator {
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    width: 60rem;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: .5rem;
+}
+
+/* container */
+.container {
+    max-width: 140rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.calculator__top {
+    background: #4d90fe;
+    padding: 1.5rem;
+    font-size: 3.8rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+}
+
+.calculator__form {
+    padding-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.form__bill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    margin-top: 3.5rem;
+}
+
+.form__bill h3 {
+    font-size:2.2rem;
+    font-weight: 600;
+}
+
+.bill {
+    border: 1px solid gray;
+    width: 10rem;
+    margin-left: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4d90fe;
+}
+
+.form__tip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.form__tip h3 {
+    font-size:2.2rem;
+    font-weight: 600;
+}
+
+.tip {
+    width: 10rem;
+    margin-left: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4d90fe;
+}
+
+.form__people {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.form__people h3 {
+    font-size:2.2rem;
+    font-weight: 600;
+}
+
+.people {
+    width: 10rem;
+    margin-left: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4d90fe;
+}
+
+/* btns */
+.btn-area {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    display: flex;
+    text-align: center;
+}
+.calculate-btn {
+    padding: 2rem 3rem;
+    margin-right: 2rem;
+    border: none;
+    font-size: 2rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.clear-btn {
+    padding: 2rem 5rem;
+    background: #4d90fe;
+    margin-right: 2rem;
+    border: none;
+    font-size: 2rem;
+    border-radius: .5rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* table */
+
+.calculations {
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    background: rgb(231, 231, 231);
+    width: 60rem;
+    margin: auto;
+    margin-top: 6rem;
+    border-radius: .5rem;
+    margin-bottom: 6rem;
+}
+
+.calculations .container {
+    max-width: 140rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.answers {
+    width: 100%;
+}
+
+.answers__tip-total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 100%;
+    padding: 1rem;
+}
+
+.answers__tip-total .question {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-right: 2rem;
+}
+
+.tip-total__amount {
+    font-size: 3rem;
+    color: #4d90fe;
+}
+
+.answers__tip-per {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(231, 231, 231);
+    width: 100%;
+    padding: 1rem;
+}
+
+.answers__tip-per .question {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-right: 2rem;
+}
+
+.tip-per__amount {
+    font-size: 3rem;
+    color: #4d90fe;
+}
+
+.answers__total {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 100%;
+    padding: 1rem;
+}
+
+.answers__total .question {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-right: 2rem;
+}
+
+.total__amount {
+    font-size: 3rem;
+    color: #4d90fe;
+}
+
+.answers__total-per {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(231, 231, 231);
+    width: 100%;
+    padding: 1rem;
+}
+
+.answers__total-per .question {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-right: 2rem;
+}
+
+.total-per__amount {
+    font-size: 3rem;
+    color: #4d90fe;
+}

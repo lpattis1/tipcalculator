@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <section class="calculator">
+            <div class="container">
+
+                <div class="calculator__top">
+                    <h2>Tip Calculator</h2>
+                </div>
+
+                <form action="" class="calculator__form">
+
+                    <div class="form__bill">
+                        <h3>Bill Amount: </h3>
+                        <input type="text" class="bill">
+                    </div>
+
+                    <div class="form__tip">
+                        <h3>Tip Percent: </h3>
+                        <input type="text" class="tip">
+                    </div>
+
+                    <div class="form__people">
+                        <h3># of People:</h3>
+                        <input type="text" class="people">
+                    </div>
+
+                </form>
+
+                <div class="btn-area">
+                    <button class="calculate-btn">Calculate</button>
+                    <button class="clear-btn">Clear</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculations">
+            <div class="container">
+
+                <div class="answers">
+
+                    <div class="answers__tip-total">
+                        <span class="question">Tip Total:</span>
+                        <span class="tip-total__amount">$</span>
+                    </div>
+
+                    <div class="answers__tip-per">
+                        <span class="question">Tip Each Person:</span>
+                        <span class="tip-per__amount">$</span>
+                    </div>
+
+                    <div class="answers__total">
+                        <span class="question">Total (Bill + Tip):</span>
+                        <span class="total__amount">$</span>
+                    </div>
+
+                    <div class="answers__total-per">
+                        <span class="question">Total Each Person:</span>
+                        <span class="total-per__amount">$</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <script src="app.js"></script>
+</body>
+</html>
